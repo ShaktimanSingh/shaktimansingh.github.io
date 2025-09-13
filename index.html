@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Boss — Personal Portfolio</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<div class="nav">
+			<div class="brand">
+				<div class="logo">B</div>
+				<div class="nav-left"><a href="#home" class="nav-link">Home</a></div>
+			</div>
+			<nav>
+				<ul>
+					<li><a class="nav-link" href="#skills">Skills</a></li>
+					<li><a class="nav-link" href="#projects">Projects</a></li>
+					<li><a class="nav-link" href="#about">About</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="wrap" id="home" style="margin: 0 auto !important;">
+			<!-- LEFT big visual -->
+			<div class="left-card">
+				<div class="left-inner">
+					<div class="headline">
+						<div class="eyebrow">Services &mdash; Works &mdash; Blog</div>
+						<h1 class="name">Carlos<br /><small>Mendoza.</small></h1>
+						<p style="margin-top:18px;color:var(--muted);max-width:600px">Product Designer and Developer, based in
+							California. I craft memorable digital experiences — from concept to shipping production-ready apps.</p>
+						<div style="margin-top:20px;display:flex;gap:14px;align-items:center">
+							<a class="btn-small" href="#projects"
+								style="padding:10px 16px;background:var(--accent);color:#111;border-radius:10px;font-weight:700">View
+								Work</a>
+							<a href="mailto:hi@carlos.com" style="color:var(--muted);font-weight:600">hi@carlos.com&nbsp;&rarr;</a>
+						</div>
+						<div class="socials" style="margin-top:22px">
+							<a href="#">● Dribbble</a>
+							<a href="#">● Behance</a>
+							<a href="#">● LinkedIn</a>
+						</div>
+					</div>
+					<img class="profile-img" src="https://via.placeholder.com/360x480.png?text=Profile+Image" alt="Boss portrait">
+				</div>
+			</div>
+
+			<!-- RIGHT stacked panels -->
+			<div class="right-stack">
+				<div class="panel">
+					<h3>Introduction</h3>
+					<p>Product Designer and Developer, based in California. I design and build digital products that people love
+						to use.</p>
+				</div>
+				<div class="panel works-grid">
+					<h3>Featured Works</h3>
+					<div class="thumb">Energetic Tumbler — UI Concept</div>
+					<div class="thumb">Product Dashboard — SaaS</div>
+					<div class="thumb">Branding — Packaging</div>
+				</div>
+				<div class="panel">
+					<h3>Latest</h3>
+					<p style="color:var(--muted);font-size:13px">Thoughts on design, animation and building faster interfaces.</p>
+				</div>
+			</div>
+
+			<!-- mid folded area spanning columns (simulate large dark strip) -->
+			<div style="grid-column:1 / -1;display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:26px">
+				<div class="contact-block">
+					<h3 style="color:var(--muted);margin-top:0">Contact</h3>
+					<p>Any Type Of Query & Discussion. Reach me at <a href="mailto:hi@carlos.com">hi@carlos.com</a></p>
+					<div class="stats">
+						<div class="stat">
+							<h4>14</h4>
+							<div style="color:var(--muted)">Years Experience</div>
+						</div>
+						<div class="stat">
+							<h4>187</h4>
+							<div style="color:var(--muted)">Satisfied Clients</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="quote">
+					<h3 style="margin-top:0;color:var(--muted)">You can't use up creativity the more you use, more you have in
+						your significant mind.</h3>
+					<p style="margin-top:12px;color:var(--muted)">Short reflection and supporting paragraph to give personality
+						and depth. Keep it concise and memorable.</p>
+					<div style="margin-top:22px" class="testimonial">
+						<div style="display:flex;align-items:center;gap:12px">
+							<img src="https://via.placeholder.com/64" alt=""
+								style="width:48px;height:48px;border-radius:8px;object-fit:cover">
+							<div>
+								<div style="font-weight:700">Jared Warner</div>
+								<div style="color:var(--muted);font-size:13px">Product Lead</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- services / categories like bottom cards -->
+			<div style="grid-column:1 / -1;margin-top:26px">
+				<div class="services-row">
+					<div class="service primary">
+						<div>
+							<h4>Product Designer.</h4>
+							<p>124 Projects</p>
+						</div>
+						<div style="font-weight:700;opacity:0.9">→</div>
+					</div>
+					<div class="service">
+						<div>
+							<h4>Branding Designer.</h4>
+							<p>37 Projects</p>
+						</div>
+						<div style="font-weight:700;opacity:0.9">→</div>
+					</div>
+					<div class="service">
+						<div>
+							<h4>Full Stack Developer.</h4>
+							<p>62 Projects</p>
+						</div>
+						<div style="font-weight:700;opacity:0.9">→</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<!-- Projects section full width -->
+		<section id="projects" style="padding:60px 20px">
+			<div class="wrap" style="max-width:var(--max-width);grid-template-columns:repeat(3,1fr);gap:18px">
+				<div class="project-card panel" style="grid-column:span 1">
+					<img src="https://via.placeholder.com/520x320?text=Project+1" alt="Project 1"
+						style="width:100%;border-radius:10px;display:block">
+					<h3 style="margin-top:12px">Energetic Tumbler — Branding</h3>
+					<p style="color:var(--muted);margin-top:6px">A concept packaging and landing UI for a modern beverage brand.
+					</p>
+				</div>
+				<div class="project-card panel">
+					<img src="https://via.placeholder.com/520x320?text=Project+2" alt="Project 2"
+						style="width:100%;border-radius:10px;display:block">
+					<h3 style="margin-top:12px">Product Dashboard — SaaS</h3>
+					<p style="color:var(--muted);margin-top:6px">Analytics, charts and multi-tenant patterns for scale.</p>
+				</div>
+				<div class="project-card panel">
+					<img src="https://via.placeholder.com/520x320?text=Project+3" alt="Project 3"
+						style="width:100%;border-radius:10px;display:block">
+					<h3 style="margin-top:12px">Mobile App — UX Case Study</h3>
+					<p style="color:var(--muted);margin-top:6px">Interaction led mobile experiences focusing on motion and
+						delight.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- About / Skills / Contact condensed -->
+		<section id="about" style="padding:60px 20px">
+			<div class="wrap" style="grid-template-columns:1fr 1fr;align-items:start">
+				<div class="panel">
+					<h3>About Me</h3>
+					<p style="color:var(--muted)">I’m a passionate developer who loves blending creativity with technology. From
+						crafting interactive UIs to building scalable backend systems, I thrive on bringing ideas to life with code
+						and design.</p>
+				</div>
+				<div class="panel">
+					<h3>Skills</h3>
+					<div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:12px">
+						<span style="background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:8px">HTML / CSS / JS</span>
+						<span style="background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:8px">React</span>
+						<span style="background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:8px">Node.js</span>
+						<span style="background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:8px">Three.js / GSAP</span>
+						<span style="background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:8px">Figma / Design
+							Systems</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" style="padding:60px 20px">
+			<div class="wrap" style="grid-template-columns:1fr;">
+				<div class="panel">
+					<h3>Contact</h3>
+					<p style="color:var(--muted)">Want to work together? Send me a message and I’ll get back within 24–48 hours.
+					</p>
+					<form style="margin-top:18px;display:flex;gap:12px;flex-direction:column;max-width:520px">
+						<input placeholder="Your name"
+							style="padding:12px;border-radius:8px;border:none;background:rgba(255,255,255,0.02);color:inherit">
+						<input placeholder="Your email"
+							style="padding:12px;border-radius:8px;border:none;background:rgba(255,255,255,0.02);color:inherit">
+						<textarea placeholder="What are we building?"
+							style="padding:12px;border-radius:8px;border:none;background:rgba(255,255,255,0.02);color:inherit;min-height:120px"></textarea>
+						<button
+							style="padding:12px 18px;border-radius:10px;border:none;background:var(--accent);color:#111;font-weight:700;max-width:180px">Send
+							Message →</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer>
+		© 2025 Boss • Crafted with care • Built with HTML/CSS/JS
+	</footer>
+
+	<!-- scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.180.0/three.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+
+</html>
