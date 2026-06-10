@@ -1,221 +1,844 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Boss — Personal Portfolio</title>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shaktiman Singh — Full-Stack Software Engineer specializing in Laravel, FastAPI, AI systems, and production-grade APIs. 4+ years building scalable backend platforms.">
+    <meta name="author" content="Shaktiman Singh">
+    <meta name="theme-color" content="#0d1117">
+
+    <title>Shaktiman Singh | Full-Stack Software Engineer</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-	<header>
-		<div class="nav">
-			<div class="brand">
-				<div class="logo">B</div>
-				<div class="nav-left"><a href="#home" class="nav-link">Home</a></div>
-			</div>
-			<nav>
-				<ul>
-					<li><a class="nav-link" href="#skills">Skills</a></li>
-					<li><a class="nav-link" href="#projects">Projects</a></li>
-					<li><a class="nav-link" href="#about">About</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <span class="brand-accent">&lt;</span>Shaktiman<span class="text-warning">.dev</span><span class="brand-accent">/&gt;</span>
+            </a>
+            <button class="navbar-toggler border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-lg-1">
+                    <li class="nav-item"><a class="nav-link" href="#about" data-nav>About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills" data-nav>Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects" data-nav>Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education" data-nav>Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work" data-nav>Experience</a></li>
+                    <li class="nav-item"><a class="nav-link nav-cta" href="#contact" data-nav>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-	<main>
-		<section class="wrap" id="home" style="margin: 0 auto !important;">
-			<!-- LEFT big visual -->
-			<div class="left-card">
-				<div class="left-inner">
-					<div class="headline">
-						<div class="eyebrow">Services &mdash; Works &mdash; Blog</div>
-						<h1 class="name">Carlos<br /><small>Mendoza.</small></h1>
-						<p style="margin-top:18px;color:var(--muted);max-width:600px">Product Designer and Developer, based in
-							California. I craft memorable digital experiences — from concept to shipping production-ready apps.</p>
-						<div style="margin-top:20px;display:flex;gap:14px;align-items:center">
-							<a class="btn-small" href="#projects"
-								style="padding:10px 16px;background:var(--accent);color:#111;border-radius:10px;font-weight:700">View
-								Work</a>
-							<a href="mailto:hi@carlos.com" style="color:var(--muted);font-weight:600">hi@carlos.com&nbsp;&rarr;</a>
-						</div>
-						<div class="socials" style="margin-top:22px">
-							<a href="#">● Dribbble</a>
-							<a href="#">● Behance</a>
-							<a href="#">● LinkedIn</a>
-						</div>
-					</div>
-					<img class="profile-img" src="https://via.placeholder.com/360x480.png?text=Profile+Image" alt="Boss portrait">
-				</div>
-			</div>
+    <main>
+        <div id="home">
+            <section class="hero-section">
+                <div class="hero-bg"></div>
+                <div class="container hero-container">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-7" data-aos="fade-right">
+                            <p class="hero-greeting mb-2">Hello, I'm</p>
+                            <h1 class="hero-title mb-3">
+                                <span class="dev-name">Shaktiman Singh</span>
+                            </h1>
+                            <p class="hero-role mb-3">
+                                <span class="typing"></span>
+                            </p>
+                            <p class="hero-summary">
+                                Full-stack engineer with <strong>4+ years</strong> building production APIs, AI-powered platforms,
+                                and scalable web systems — from Laravel job marketplaces to FastAPI + Gemini fitness coaches.
+                            </p>
 
-			<!-- RIGHT stacked panels -->
-			<div class="right-stack">
-				<div class="panel">
-					<h3>Introduction</h3>
-					<p>Product Designer and Developer, based in California. I design and build digital products that people love
-						to use.</p>
-				</div>
-				<div class="panel works-grid">
-					<h3>Featured Works</h3>
-					<div class="thumb">Energetic Tumbler — UI Concept</div>
-					<div class="thumb">Product Dashboard — SaaS</div>
-					<div class="thumb">Branding — Packaging</div>
-				</div>
-				<div class="panel">
-					<h3>Latest</h3>
-					<p style="color:var(--muted);font-size:13px">Thoughts on design, animation and building faster interfaces.</p>
-				</div>
-			</div>
+                            <div class="hero-stats row g-3 my-4">
+                                <div class="col-4">
+                                    <div class="stat-card">
+                                        <span class="stat-value">4+</span>
+                                        <span class="stat-label">Years Exp.</span>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-card">
+                                        <span class="stat-value">2</span>
+                                        <span class="stat-label">Products Built</span>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-card">
+                                        <span class="stat-value">AI</span>
+                                        <span class="stat-label">LLM Systems</span>
+                                    </div>
+                                </div>
+                            </div>
 
-			<!-- mid folded area spanning columns (simulate large dark strip) -->
-			<div style="grid-column:1 / -1;display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:26px">
-				<div class="contact-block">
-					<h3 style="color:var(--muted);margin-top:0">Contact</h3>
-					<p>Any Type Of Query & Discussion. Reach me at <a href="mailto:hi@carlos.com">hi@carlos.com</a></p>
-					<div class="stats">
-						<div class="stat">
-							<h4>14</h4>
-							<div style="color:var(--muted)">Years Experience</div>
-						</div>
-						<div class="stat">
-							<h4>187</h4>
-							<div style="color:var(--muted)">Satisfied Clients</div>
-						</div>
-					</div>
-				</div>
+                            <div class="d-flex flex-wrap gap-3">
+                                <a href="#projects" class="btn btn-warning btn-lg px-4 fw-semibold">
+                                    View Projects <i class="bi bi-arrow-right ms-2"></i>
+                                </a>
+                                <a href="SHAKTIMAN_SINGH_RESUME.pdf" class="btn btn-outline-light btn-lg px-4" download>
+                                    Download Resume <i class="bi bi-download ms-2"></i>
+                                </a>
+                            </div>
 
-				<div class="quote">
-					<h3 style="margin-top:0;color:var(--muted)">You can't use up creativity the more you use, more you have in
-						your significant mind.</h3>
-					<p style="margin-top:12px;color:var(--muted)">Short reflection and supporting paragraph to give personality
-						and depth. Keep it concise and memorable.</p>
-					<div style="margin-top:22px" class="testimonial">
-						<div style="display:flex;align-items:center;gap:12px">
-							<img src="https://via.placeholder.com/64" alt=""
-								style="width:48px;height:48px;border-radius:8px;object-fit:cover">
-							<div>
-								<div style="font-weight:700">Jared Warner</div>
-								<div style="color:var(--muted);font-size:13px">Product Lead</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+                            <div class="d-flex gap-3 mt-4 pt-2">
+                                <a href="https://linkedin.com/in/shaktiman-singh" target="_blank" rel="noopener"
+                                   class="social-btn" style="animation-delay: 0s" aria-label="LinkedIn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/ShaktimanSingh" target="_blank" rel="noopener"
+                                   class="social-btn" style="animation-delay: 0.1s" aria-label="GitHub">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="mailto:shaktimaansingh376@gmail.com" target="_self" rel="noopener"
+                                   class="social-btn" style="animation-delay: 0.2s" aria-label="Email">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </a>
+                            </div>
+                        </div>
 
-			<!-- services / categories like bottom cards -->
-			<div style="grid-column:1 / -1;margin-top:26px">
-				<div class="services-row">
-					<div class="service primary">
-						<div>
-							<h4>Product Designer.</h4>
-							<p>124 Projects</p>
-						</div>
-						<div style="font-weight:700;opacity:0.9">→</div>
-					</div>
-					<div class="service">
-						<div>
-							<h4>Branding Designer.</h4>
-							<p>37 Projects</p>
-						</div>
-						<div style="font-weight:700;opacity:0.9">→</div>
-					</div>
-					<div class="service">
-						<div>
-							<h4>Full Stack Developer.</h4>
-							<p>62 Projects</p>
-						</div>
-						<div style="font-weight:700;opacity:0.9">→</div>
-					</div>
-				</div>
-			</div>
+                        <div class="col-lg-5 text-center" data-aos="fade-left" data-aos-delay="150">
+                            <div class="hero-avatar-wrapper">
+                                <div class="hero-avatar-ring"></div>
+                                <div class="hero-avatar">
+                                    <img
+                                        src="images/Shaktiman_Singh_Profile_Image.png"
+                                        alt="Shaktiman Singh"
+                                        class="hero-avatar-img"
+                                        onerror="this.classList.add('is-hidden'); this.nextElementSibling.classList.add('is-visible');"
+                                    >
+                                    <span class="avatar-initials" aria-hidden="true">SS</span>
+                                </div>
+                                <div class="hero-floating-badge badge-top">
+                                    <i class="fab fa-laravel text-danger"></i> Laravel
+                                </div>
+                                <div class="hero-floating-badge badge-bottom">
+                                    <i class="fas fa-brain text-info"></i> AI Systems
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		</section>
+                <a href="#about" class="scroll-indicator" aria-label="Scroll to about">
+                    <i class="bi bi-chevron-down"></i>
+                </a>
+            </section>
+        </div>
 
-		<!-- Projects section full width -->
-		<section id="projects" style="padding:60px 20px">
-			<div class="wrap" style="max-width:var(--max-width);grid-template-columns:repeat(3,1fr);gap:18px">
-				<div class="project-card panel" style="grid-column:span 1">
-					<img src="https://via.placeholder.com/520x320?text=Project+1" alt="Project 1"
-						style="width:100%;border-radius:10px;display:block">
-					<h3 style="margin-top:12px">Energetic Tumbler — Branding</h3>
-					<p style="color:var(--muted);margin-top:6px">A concept packaging and landing UI for a modern beverage brand.
-					</p>
-				</div>
-				<div class="project-card panel">
-					<img src="https://via.placeholder.com/520x320?text=Project+2" alt="Project 2"
-						style="width:100%;border-radius:10px;display:block">
-					<h3 style="margin-top:12px">Product Dashboard — SaaS</h3>
-					<p style="color:var(--muted);margin-top:6px">Analytics, charts and multi-tenant patterns for scale.</p>
-				</div>
-				<div class="project-card panel">
-					<img src="https://via.placeholder.com/520x320?text=Project+3" alt="Project 3"
-						style="width:100%;border-radius:10px;display:block">
-					<h3 style="margin-top:12px">Mobile App — UX Case Study</h3>
-					<p style="color:var(--muted);margin-top:6px">Interaction led mobile experiences focusing on motion and
-						delight.</p>
-				</div>
-			</div>
-		</section>
+        <div id="about">
+            <div class="container section-padding" data-aos="fade-up">
+                <div class="text-center mb-5">
+                    <span class="section-label">About</span>
+                    <h2 class="section-title">Engineering with Purpose</h2>
+                    <p class="section-subtitle mx-auto">
+                        I design and ship backend systems, AI integrations, and full-stack products that hold up in production.
+                    </p>
+                    <div class="heading-underline mx-auto mt-3"></div>
+                </div>
 
-		<!-- About / Skills / Contact condensed -->
-		<section id="about" style="padding:60px 20px">
-			<div class="wrap" style="grid-template-columns:1fr 1fr;align-items:start">
-				<div class="panel">
-					<h3>About Me</h3>
-					<p style="color:var(--muted)">I’m a passionate developer who loves blending creativity with technology. From
-						crafting interactive UIs to building scalable backend systems, I thrive on bringing ideas to life with code
-						and design.</p>
-				</div>
-				<div class="panel">
-					<h3>Skills</h3>
-					<div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:12px">
-						<span style="background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:8px">HTML / CSS / JS</span>
-						<span style="background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:8px">React</span>
-						<span style="background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:8px">Node.js</span>
-						<span style="background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:8px">Three.js / GSAP</span>
-						<span style="background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:8px">Figma / Design
-							Systems</span>
-					</div>
-				</div>
-			</div>
-		</section>
+                <div class="row justify-content-center g-4">
+                    <div class="col-lg-10">
+                        <div class="about-panel glass-panel p-4 p-lg-5">
+                            <p class="lead-text mb-4">
+                                I'm <span class="text-warning fw-semibold">Shaktiman Singh</span>, a
+                                <span class="text-info fw-semibold">Software Engineer</span> based in Bengaluru with
+                                <strong>4+ years of experience</strong> across backend development, API integration,
+                                and AI-powered application development.
+                            </p>
 
-		<section id="contact" style="padding:60px 20px">
-			<div class="wrap" style="grid-template-columns:1fr;">
-				<div class="panel">
-					<h3>Contact</h3>
-					<p style="color:var(--muted)">Want to work together? Send me a message and I’ll get back within 24–48 hours.
-					</p>
-					<form style="margin-top:18px;display:flex;gap:12px;flex-direction:column;max-width:520px">
-						<input placeholder="Your name"
-							style="padding:12px;border-radius:8px;border:none;background:rgba(255,255,255,0.02);color:inherit">
-						<input placeholder="Your email"
-							style="padding:12px;border-radius:8px;border:none;background:rgba(255,255,255,0.02);color:inherit">
-						<textarea placeholder="What are we building?"
-							style="padding:12px;border-radius:8px;border:none;background:rgba(255,255,255,0.02);color:inherit;min-height:120px"></textarea>
-						<button
-							style="padding:12px 18px;border-radius:10px;border:none;background:var(--accent);color:#111;font-weight:700;max-width:180px">Send
-							Message →</button>
-					</form>
-				</div>
-			</div>
-		</section>
+                            <div class="row g-4 mb-4">
+                                <div class="col-md-6">
+                                    <div class="about-highlight">
+                                        <div class="about-highlight-icon"><i class="fas fa-layer-group"></i></div>
+                                        <div>
+                                            <h5 class="text-warning mb-2">Full-Stack Product Engineering</h5>
+                                            <p class="mb-0 text-secondary small">
+                                                Built <strong class="text-light">KaamFind</strong> — a Laravel 11 job marketplace with JWT mobile API,
+                                                React Native app, OTP auth, and Render/Supabase deployment. Also shipped
+                                                <strong class="text-light">FitGPT</strong>, an AI fitness platform with FastAPI, streaming chat,
+                                                and cross-platform React/Expo clients.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="about-highlight">
+                                        <div class="about-highlight-icon"><i class="fas fa-plug"></i></div>
+                                        <div>
+                                            <h5 class="text-warning mb-2">Production API Engineering</h5>
+                                            <p class="mb-0 text-secondary small">
+                                                Built and maintained REST APIs for messaging, campaign orchestration, and
+                                                automation workflows — with strong focus on validation, reliability, and
+                                                failure-safe processing in high-volume production environments.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="about-highlight">
+                                        <div class="about-highlight-icon"><i class="fas fa-robot"></i></div>
+                                        <div>
+                                            <h5 class="text-warning mb-2">AI & Intelligent Systems</h5>
+                                            <p class="mb-0 text-secondary small">
+                                                Integrated LLM APIs (Gemini, OpenAI) into production workflows — streaming chat,
+                                                validated plan generation, prompt engineering, and safety-aware response handling.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="about-highlight">
+                                        <div class="about-highlight-icon"><i class="fas fa-server"></i></div>
+                                        <div>
+                                            <h5 class="text-warning mb-2">Production Engineering</h5>
+                                            <p class="mb-0 text-secondary small">
+                                                Comfortable with Docker, CI/CD, PostgreSQL/MySQL optimization, Redis caching,
+                                                JWT/session auth, queue workers, structured logging, and cloud deployments on AWS and Render.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-	</main>
+                            <div class="row mt-2 pt-3 border-top border-secondary border-opacity-25">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <h6 class="text-warning text-uppercase small fw-bold letter-spacing">Core Stack</h6>
+                                    <p class="text-light small mb-0">
+                                        Laravel · PHP · FastAPI · Python · React · React Native ·
+                                        PostgreSQL · MySQL · Redis · Docker · AWS · JWT · Livewire
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="text-warning text-uppercase small fw-bold letter-spacing">Focus Areas</h6>
+                                    <p class="text-light small mb-0">
+                                        Backend Architecture · REST API Design · AI Orchestration ·
+                                        System Design · Database Optimization · DevOps & CI/CD
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	<footer>
-		© 2025 Boss • Crafted with care • Built with HTML/CSS/JS
-	</footer>
+        <div id="skills">
+            <div class="container section-padding">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span class="section-label">Expertise</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <p class="section-subtitle mx-auto">
+                        Depth across backend, AI, and infrastructure — honed through production systems and enterprise delivery.
+                    </p>
+                    <div class="heading-underline mx-auto mt-3"></div>
+                </div>
 
-	<!-- scripts -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.180.0/three.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-	<script src="js/app.js"></script>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="skill-group mb-5" data-aos="fade-up">
+                            <h3 class="skill-group-title">Backend & APIs</h3>
+                            <div class="row row-cols-1 row-cols-md-2 g-3">
+                                <div class="col" data-aos="fade-up" data-aos-delay="0">
+                                    <div class="skill-card h-100">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="skill-title mb-1">Laravel</h5>
+                                                <p class="skill-desc mb-0">Production PHP framework</p>
+                                                <p class="skill-details mt-2 mb-0">Laravel 8–11: service layers, queues, Spatie RBAC, Livewire, JWT APIs, feature tests.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" data-aos="fade-up" data-aos-delay="50">
+                                    <div class="skill-card h-100">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="skill-title mb-1">FastAPI</h5>
+                                                <p class="skill-desc mb-0">Async Python APIs</p>
+                                                <p class="skill-details mt-2 mb-0">Async SQLAlchemy, Pydantic validation, SSE streaming, dependency injection, repository pattern.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="skill-card h-100">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="skill-title mb-1">Python</h5>
+                                                <p class="skill-desc mb-0">Backend & AI scripting</p>
+                                                <p class="skill-details mt-2 mb-0">Microservices, OpenAI/Gemini integrations, automation, pytest.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" data-aos="fade-up" data-aos-delay="150">
+                                    <div class="skill-card h-100">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <div class="skill-icon"><i class="fab fa-php"></i></div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="skill-title mb-1">PHP</h5>
+                                                <p class="skill-desc mb-0">Server-side development</p>
+                                                <p class="skill-details mt-2 mb-0">RESTful services, PHPUnit TDD, middleware pipelines, Eloquent ORM.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" data-aos="fade-up" data-aos-delay="0">
+                                    <div class="skill-card h-100">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <div class="skill-icon"><i class="fas fa-plug"></i></div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="skill-title mb-1">REST API Design</h5>
+                                                <p class="skill-desc mb-0">Production API architecture</p>
+                                                <p class="skill-details mt-2 mb-0">Versioned REST APIs, validation layers, auth flows, rate limiting, and service boundaries.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" data-aos="fade-up" data-aos-delay="50">
+                                    <div class="skill-card h-100">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <div class="skill-icon"><i class="fas fa-key"></i></div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="skill-title mb-1">REST & JWT</h5>
+                                                <p class="skill-desc mb-0">API design & auth</p>
+                                                <p class="skill-details mt-2 mb-0">Versioned APIs, OAuth2/JWT, rate limiting, onboarding gates, refresh tokens.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-group mb-5" data-aos="fade-up">
+                            <h3 class="skill-group-title">Data & Infrastructure</h3>
+                            <div class="row row-cols-1 row-cols-md-2 g-3">
+                                <div class="col" data-aos="fade-up" data-aos-delay="0">
+                                    <div class="skill-card h-100">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="skill-title mb-1">PostgreSQL</h5>
+                                                <p class="skill-desc mb-0">Primary production DB</p>
+                                                <p class="skill-details mt-2 mb-0">Schema design, composite indexes, async queries via asyncpg/SQLAlchemy.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" data-aos="fade-up" data-aos-delay="50">
+                                    <div class="skill-card h-100">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="skill-title mb-1">MySQL</h5>
+                                                <p class="skill-desc mb-0">Relational databases</p>
+                                                <p class="skill-details mt-2 mb-0">Query optimization, migrations, joins, production troubleshooting.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="skill-card h-100">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <div class="skill-icon"><i class="fas fa-memory"></i></div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="skill-title mb-1">Redis</h5>
+                                                <p class="skill-desc mb-0">Caching & rate limits</p>
+                                                <p class="skill-details mt-2 mb-0">Plan caching, chat context, rate limiting, analytics counters.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" data-aos="fade-up" data-aos-delay="150">
+                                    <div class="skill-card h-100">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="skill-title mb-1">Docker</h5>
+                                                <p class="skill-desc mb-0">Containerization</p>
+                                                <p class="skill-details mt-2 mb-0">Docker Compose stacks, multi-service local dev, production Dockerfiles.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" data-aos="fade-up" data-aos-delay="0">
+                                    <div class="skill-card h-100">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="skill-title mb-1">AWS</h5>
+                                                <p class="skill-desc mb-0">Cloud services</p>
+                                                <p class="skill-details mt-2 mb-0">S3 file storage, Lambda, IAM, EC2 — used in resume pipelines and deployments.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" data-aos="fade-up" data-aos-delay="50">
+                                    <div class="skill-card h-100">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <div class="skill-icon"><i class="fab fa-github"></i></div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="skill-title mb-1">CI/CD & Git</h5>
+                                                <p class="skill-desc mb-0">DevOps workflow</p>
+                                                <p class="skill-details mt-2 mb-0">GitHub Actions, PHPUnit/pytest pipelines, branching strategies, code review.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-group mb-5" data-aos="fade-up">
+                            <h3 class="skill-group-title">Frontend & AI</h3>
+                            <div class="row row-cols-1 row-cols-md-2 g-3">
+                                <div class="col" data-aos="fade-up" data-aos-delay="0">
+                                    <div class="skill-card h-100">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="skill-title mb-1">React</h5>
+                                                <p class="skill-desc mb-0">Modern web UI</p>
+                                                <p class="skill-details mt-2 mb-0">Vite, Zustand state, component architecture, SSE streaming UI.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" data-aos="fade-up" data-aos-delay="50">
+                                    <div class="skill-card h-100">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="skill-title mb-1">React Native / Expo</h5>
+                                                <p class="skill-desc mb-0">Cross-platform mobile</p>
+                                                <p class="skill-details mt-2 mb-0">KaamFind mobile app, FitGPT Expo client, shared API layers.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="skill-card h-100">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="skill-title mb-1">JavaScript</h5>
+                                                <p class="skill-desc mb-0">Full-stack scripting</p>
+                                                <p class="skill-details mt-2 mb-0">ES6+, async/await, fetch APIs, DOM interactions, npm workspaces.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" data-aos="fade-up" data-aos-delay="150">
+                                    <div class="skill-card h-100">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="skill-title mb-1">Gemini & OpenAI</h5>
+                                                <p class="skill-desc mb-0">LLM integration</p>
+                                                <p class="skill-details mt-2 mb-0">Prompt engineering, structured JSON output, dual-provider fallback, safety validation.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" data-aos="fade-up" data-aos-delay="0">
+                                    <div class="skill-card h-100">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="skill-title mb-1">Livewire</h5>
+                                                <p class="skill-desc mb-0">Reactive Laravel UI</p>
+                                                <p class="skill-details mt-2 mb-0">Full-page Livewire apps, form handling, real-time components.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" data-aos="fade-up" data-aos-delay="50">
+                                    <div class="skill-card h-100">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <div class="skill-icon"><i class="fas fa-sitemap"></i></div>
+                                            <div class="flex-grow-1">
+                                                <h5 class="skill-title mb-1">System Design</h5>
+                                                <p class="skill-desc mb-0">Architecture</p>
+                                                <p class="skill-details mt-2 mb-0">Service layers, monorepos, middleware pipelines, scalable API design.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects">
+            <div class="container section-padding">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span class="section-label">Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle mx-auto">
+                        Production-grade systems I've architected and shipped — from AI platforms to enterprise integrations.
+                    </p>
+                    <div class="heading-underline mx-auto mt-3"></div>
+                </div>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0">
+                        <div class="project-card featured-card h-100 accent-emerald">
+                            <div class="project-card-header">
+                                <div class="project-icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <span class="project-badge">Full-Stack Product</span>
+                            </div>
+                            <h3 class="project-name">KaamFind</h3>
+                            <p class="project-tagline">Job marketplace for blue-collar talent</p>
+                            <p class="project-desc">End-to-end hiring platform with dual web portals (talent, creator, admin), versioned JWT API, React Native mobile app, OTP/SMS auth, resume lifecycle on S3, and production deployment on Render + Supabase.</p>
+                            <ul class="project-highlights">
+                                <li>Laravel 11 + PHP 8.2 with service-layer architecture</li>
+                                <li>JWT + session dual-auth, Spatie RBAC (4 roles)</li>
+                                <li>OTP/SMS (Fast2SMS, MSG91), application pipeline & contact handoff</li>
+                                <li>S3 resume storage, compression, retention policies, scheduled purge</li>
+                                <li>React Native companion app, PHPStan level max, feature tests</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Laravel 11</span>
+                                <span class="tech-tag">JWT</span>
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">AWS S3</span>
+                                <span class="tech-tag">Render</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-card featured-card h-100 accent-cyan">
+                            <div class="project-card-header">
+                                <div class="project-icon">
+                                    <i class="fas fa-dumbbell"></i>
+                                </div>
+                                <span class="project-badge">AI SaaS</span>
+                            </div>
+                            <h3 class="project-name">FitGPT</h3>
+                            <p class="project-tagline">AI-powered fitness coaching platform</p>
+                            <p class="project-desc">Startup-grade monorepo delivering personalized workout/diet plans and streaming AI chat across web and mobile — with Gemini + Ollama fallback, Redis caching, and production-ready observability.</p>
+                            <ul class="project-highlights">
+                                <li>FastAPI async backend with repository + service layer pattern</li>
+                                <li>SSE streaming chat, validated JSON plan generation (Pydantic)</li>
+                                <li>Shared API client for React web + Expo mobile (npm workspaces)</li>
+                                <li>Redis rate limiting, plan caching, chat context windowing</li>
+                                <li>Docker Compose, CI pipeline, Locust load tests, AWS/GCP deploy docs</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Expo</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Redis</span>
+                                <span class="tech-tag">Gemini AI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mb-4" data-aos="fade-up">
+                    <h3 class="h4 text-warning fw-semibold">Enterprise & Professional Work</h3>
+                    <p class="text-secondary small">Delivered at scale for fintech, telecom, and integration clients.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+                        <div class="project-card compact-card h-100">
+                            <div class="project-icon-sm mb-3">
+                                <i class="fas fa-broadcast-tower"></i>
+                            </div>
+                            <h4 class="h5 text-warning mb-2">Campaign Orchestration APIs</h4>
+                            <p class="small text-secondary mb-3">Built REST APIs and backend flows for SMS, WhatsApp, and Voice campaign scheduling, automation, and message processing pipelines.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag tech-tag-sm">Laravel</span>
+                                <span class="tech-tag tech-tag-sm">REST APIs</span>
+                                <span class="tech-tag tech-tag-sm">MySQL</span>
+                                <span class="tech-tag tech-tag-sm">PHPUnit</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="80">
+                        <div class="project-card compact-card h-100">
+                            <div class="project-icon-sm mb-3">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4 class="h5 text-warning mb-2">Messaging Workflow Engine</h4>
+                            <p class="small text-secondary mb-3">Improved reliability of communication workflows with structured logging, failure handling, and validation to ensure zero data loss.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag tech-tag-sm">PHP</span>
+                                <span class="tech-tag tech-tag-sm">REST</span>
+                                <span class="tech-tag tech-tag-sm">Redis</span>
+                                <span class="tech-tag tech-tag-sm">TDD</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="160">
+                        <div class="project-card compact-card h-100">
+                            <div class="project-icon-sm mb-3">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h4 class="h5 text-warning mb-2">AI Workflow Integration</h4>
+                            <p class="small text-secondary mb-3">Built Python + OpenAI microservices for intelligent conversation flows and smart form completions within enterprise tooling.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag tech-tag-sm">Python</span>
+                                <span class="tech-tag tech-tag-sm">OpenAI</span>
+                                <span class="tech-tag tech-tag-sm">REST APIs</span>
+                                <span class="tech-tag tech-tag-sm">Microservices</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="education">
+            <div class="container section-padding">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span class="section-label">Background</span>
+                    <h2 class="section-title">Education</h2>
+                    <p class="section-subtitle mx-auto">
+                        Strong academic foundation in computer science and application development.
+                    </p>
+                    <div class="heading-underline mx-auto mt-3"></div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="timeline">
+                            <div class="timeline-item" data-aos="fade-up">
+                                <div class="timeline-icon bg-warning"><i class="fas fa-graduation-cap"></i></div>
+                                <div class="timeline-content glass-panel">
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+                                        <h5 class="text-info mb-0">Master of Computer Applications (MCA)</h5>
+                                        <span class="timeline-date">2020 – 2022</span>
+                                    </div>
+                                    <p class="text-warning small fw-semibold mb-2">LNCT Group of Colleges</p>
+                                    <p class="small text-secondary mb-0">
+                                        Specialized in software engineering, algorithms, and enterprise application design.
+                                        Built foundation for full-stack development and system architecture.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="timeline-icon bg-warning"><i class="fas fa-user-graduate"></i></div>
+                                <div class="timeline-content glass-panel">
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+                                        <h5 class="text-info mb-0">Bachelor of Computer Application (BCA)</h5>
+                                        <span class="timeline-date">2015 – 2018</span>
+                                    </div>
+                                    <p class="text-warning small fw-semibold mb-2">Mahadeo Singh College, Bhagalpur</p>
+                                    <p class="small text-secondary mb-0">
+                                        Core training in programming fundamentals, data structures, DBMS, and web technologies
+                                        that laid the groundwork for professional software engineering.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="work">
+            <div class="container section-padding">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span class="section-label">Career</span>
+                    <h2 class="section-title">Work Experience</h2>
+                    <p class="section-subtitle mx-auto">
+                        Four years of building production APIs, backend systems, and AI-driven workflows across product and telecom teams.
+                    </p>
+                    <div class="heading-underline mx-auto mt-3"></div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="timeline">
+                            <div class="timeline-item" data-aos="fade-up">
+                                <div class="timeline-icon bg-warning"><i class="fas fa-code-branch"></i></div>
+                                <div class="timeline-content glass-panel">
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+                                        <h5 class="text-info mb-0">Software Engineer — Backend & AI Systems</h5>
+                                        <span class="timeline-date">Jun 2024 – Present</span>
+                                    </div>
+                                    <p class="text-warning small fw-semibold mb-3">TriColor Initiatives / Illumia Ventures</p>
+                                    <ul class="experience-list small mb-0">
+                                        <li>Built Python-based backend services for AI-driven workflows in production environments.</li>
+                                        <li>Developed and maintained REST APIs with focus on performance, validation, and secure data handling.</li>
+                                        <li>Handled unreliable AI responses through validation, fallback handling, and failure-safe processing.</li>
+                                        <li>Integrated external services — AI APIs, notifications, and automation workflows.</li>
+                                        <li>Improved system reliability via structured logging, retry mechanisms, and production debugging.</li>
+                                        <li>Independently architected and shipped <strong>KaamFind</strong> and <strong>FitGPT</strong> as production-ready products.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="80">
+                                <div class="timeline-icon bg-warning"><i class="fas fa-server"></i></div>
+                                <div class="timeline-content glass-panel">
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+                                        <h5 class="text-info mb-0">Software Engineer</h5>
+                                        <span class="timeline-date">Jul 2022 – May 2024</span>
+                                    </div>
+                                    <p class="text-warning small fw-semibold mb-3">MOBtexting (BICS Group), Bengaluru</p>
+                                    <ul class="experience-list small mb-0">
+                                        <li>Worked on backend systems for messaging, campaign orchestration, and communication workflows.</li>
+                                        <li>Developed REST APIs and backend flows for scheduling, automation, and message processing pipelines.</li>
+                                        <li>Improved system reliability by handling failures, improving logging, and debugging production issues.</li>
+                                        <li>Ensured messages and workflows are processed reliably without data loss.</li>
+                                        <li>Collaborated with frontend teams on UI integrations using JavaScript/React for feature delivery.</li>
+                                        <li>Improved maintainability through better code structure, validation, and test coverage.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="160">
+                                <div class="timeline-icon bg-warning"><i class="fas fa-laptop-code"></i></div>
+                                <div class="timeline-content glass-panel">
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+                                        <h5 class="text-info mb-0">Software Engineering Intern</h5>
+                                        <span class="timeline-date">Jan 2022 – Mar 2022</span>
+                                    </div>
+                                    <p class="text-warning small fw-semibold mb-3">Roots & Stalks Digital</p>
+                                    <ul class="experience-list small mb-0">
+                                        <li>Assisted in building backend services and integrating APIs.</li>
+                                        <li>Gained exposure to production workflows and real-world development practices.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="container section-padding">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span class="section-label">Get in Touch</span>
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="section-subtitle mx-auto">
+                        Open to backend, full-stack, and AI engineering roles. Let's discuss how I can contribute to your team.
+                    </p>
+                    <div class="heading-underline mx-auto mt-3"></div>
+                </div>
+
+                <div class="row justify-content-center g-5">
+                    <div class="col-lg-5" data-aos="fade-right">
+                        <div class="contact-info-panel glass-panel p-4 h-100">
+                            <h4 class="text-warning mb-4">Contact Information</h4>
+
+                            <div class="contact-item">
+                                <div class="contact-item-icon"><i class="bi bi-envelope-fill"></i></div>
+                                <div>
+                                    <span class="contact-item-label">Email</span>
+                                    <a href="mailto:shaktimaansingh376@gmail.com" class="contact-item-value">shaktimaansingh376@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-item-icon"><i class="bi bi-telephone-fill"></i></div>
+                                <div>
+                                    <span class="contact-item-label">Phone</span>
+                                    <a href="tel:+918271982229" class="contact-item-value">+91 82719 82229</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-item-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                                <div>
+                                    <span class="contact-item-label">Location</span>
+                                    <span class="contact-item-value">Bengaluru, India</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-item-icon"><i class="bi bi-linkedin"></i></div>
+                                <div>
+                                    <span class="contact-item-label">LinkedIn</span>
+                                    <a href="https://linkedin.com/in/shaktiman-singh" target="_blank" rel="noopener" class="contact-item-value">linkedin.com/in/shaktiman-singh</a>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 pt-3 border-top border-secondary border-opacity-25">
+                                <p class="small text-secondary mb-0">
+                                    <i class="bi bi-briefcase me-2 text-warning"></i>
+                                    Open to Backend Engineering, Full-Stack Development, and AI Systems roles.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7" data-aos="fade-left">
+                        <form id="contactForm" class="contact-form glass-panel p-4 p-lg-5">
+                            <div class="mb-3">
+                                <label for="name" class="form-label text-light">Your Name</label>
+                                <input type="text" id="name" name="name" class="form-control form-control-dark" placeholder="John Doe" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label text-light">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-control form-control-dark" placeholder="you@company.com" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="form-label text-light">Message</label>
+                                <textarea id="message" name="message" rows="5" class="form-control form-control-dark" placeholder="Tell me about the role or project..." required></textarea>
+                            </div>
+                            <button type="submit" id="submitBtn" class="btn btn-warning px-5 py-2 fw-semibold">
+                                Send Message <i class="bi bi-send ms-2"></i>
+                            </button>
+                            <div id="formAlert" class="d-none" role="alert"></div>
+                        </form>
+                    </div>
+                </div>
+
+                <a id="backToTop" href="#home" class="back-to-top" aria-label="Back to top">
+                    <i class="bi bi-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row align-items-center gy-3">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0 text-secondary">
+                            &copy; <span id="footerYear">2026</span> <strong class="text-light">Shaktiman Singh</strong>. Built with HTML, CSS & JavaScript.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                            <a href="https://linkedin.com/in/shaktiman-singh" target="_blank" rel="noopener" class="footer-social" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/ShaktimanSingh" target="_blank" rel="noopener" class="footer-social" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                            <a href="mailto:shaktimaansingh376@gmail.com" class="footer-social" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        document.getElementById('footerYear').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
