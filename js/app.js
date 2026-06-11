@@ -58,8 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (contactForm) {
         contactForm.addEventListener("submit", async (e) => {
             e.preventDefault();
-            if (WEB3FORMS_ACCESS_KEY === "eaf73174-cf4c-4435-b8e0-20f47259aa93") {
-                showAlert("Form not configured yet. Email me at shaktimaansingh376@gmail.com", "warning");
+            if (!WEB3FORMS_ACCESS_KEY || WEB3FORMS_ACCESS_KEY === "REPLACE_WITH_YOUR_WEB3FORMS_KEY") {
+                showAlert("Contact form is not configured yet. Please try again later.", "warning");
                 return;
             }
             submitBtn.disabled = true;
@@ -71,9 +71,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 const res = await fetch("https://api.web3forms.com/submit", { method: "POST", body: formData });
                 const data = await res.json();
                 if (data.success) { contactForm.reset(); showAlert("Your message has been sent successfully!", "success"); }
-                else showAlert("Something went wrong. Please email me directly.", "danger");
+                else showAlert("Something went wrong. Please try again later.", "danger");
             } catch {
-                showAlert("Network error. Please email shaktimaansingh376@gmail.com", "danger");
+                showAlert("Network error. Please try again later.", "danger");
             } finally {
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = "Send Message <i class=\"bi bi-send ms-2\"></i>";
