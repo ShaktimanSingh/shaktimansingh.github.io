@@ -1,5 +1,5 @@
 ﻿// Get your free key at https://web3forms.com
-const WEB3FORMS_ACCESS_KEY = "REPLACE_WITH_YOUR_WEB3FORMS_KEY";
+const WEB3FORMS_ACCESS_KEY = "eaf73174-cf4c-4435-b8e0-20f47259aa93";
 
 document.addEventListener("DOMContentLoaded", () => {
     const titles = [
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (contactForm) {
         contactForm.addEventListener("submit", async (e) => {
             e.preventDefault();
-            if (WEB3FORMS_ACCESS_KEY === "REPLACE_WITH_YOUR_WEB3FORMS_KEY") {
+            if (WEB3FORMS_ACCESS_KEY === "eaf73174-cf4c-4435-b8e0-20f47259aa93") {
                 showAlert("Form not configured yet. Email me at shaktimaansingh376@gmail.com", "warning");
                 return;
             }
