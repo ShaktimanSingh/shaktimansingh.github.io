@@ -26,7 +26,7 @@ Then visit `http://localhost:3000`.
 
 ## Enable contact form (Web3Forms — free)
 
-1. Go to [web3forms.com](https://web3forms.com) and create an access key with `shaktimaansingh376@gmail.com`
+1. Go to [web3forms.com](https://web3forms.com) and create an access key with your email
 2. Open `js/app.js`
 3. Replace `REPLACE_WITH_YOUR_WEB3FORMS_KEY` with your key
 4. Messages will be emailed to you — no backend needed
