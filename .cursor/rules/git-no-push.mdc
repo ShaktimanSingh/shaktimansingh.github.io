@@ -1,0 +1,10 @@
+---
+description: User handles all git push — agent must not push remotely
+alwaysApply: true
+---
+
+# Git Push Policy
+
+The user pushes code themselves. Do not run `git push` unless they explicitly ask in that message.
+
+After changes, tell them what to commit/push locally. Do not commit unless explicitly asked.
