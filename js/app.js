@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         window.addEventListener("scroll", () => navbar.classList.toggle("scrolled", window.scrollY > 20), { passive: true });
     }
 
-    const navSections = ["home","about","skills","projects","education","work","contact"];
+    const navSections = ["home","about","architecture","skills","projects","education","work","contact"];
     const navLinks = document.querySelectorAll("[data-nav]");
     const setActiveNav = () => {
         let current = "home";
