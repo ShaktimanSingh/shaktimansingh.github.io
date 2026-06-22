@@ -86,6 +86,50 @@ document.addEventListener("DOMContentLoaded", () => {
         formAlert.innerHTML = message;
         formAlert.classList.remove("d-none");
     }
+
+    // KaamFind screenshot gallery
+    const kaamfindMain = document.getElementById("kaamfindMain");
+    const kaamfindCaption = document.getElementById("kaamfindCaption");
+    const kaamfindBadge = document.getElementById("kaamfindBadge");
+    const gallery = document.querySelector('[data-gallery="kaamfind"]');
+    if (!gallery || !kaamfindMain) return;
+
+    const setScreenshot = (tab) => {
+        kaamfindMain.style.opacity = "0.4";
+        kaamfindMain.src = tab.dataset.src;
+        kaamfindMain.alt = tab.dataset.label || "KaamFind screenshot";
+        kaamfindMain.onload = () => { kaamfindMain.style.opacity = "1"; };
+        if (kaamfindCaption) kaamfindCaption.textContent = tab.dataset.label || "";
+    };
+
+    const activateTab = (tab) => {
+        const portal = tab.closest("[data-portal-tabs]");
+        portal?.querySelectorAll(".screenshot-tab").forEach(t => t.classList.remove("active"));
+        tab.classList.add("active");
+        setScreenshot(tab);
+    };
+
+    gallery.querySelectorAll(".screenshot-tab").forEach(tab => {
+        tab.addEventListener("click", () => activateTab(tab));
+    });
+
+    gallery.querySelectorAll(".portal-switch").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const portal = btn.dataset.portal;
+            gallery.querySelectorAll(".portal-switch").forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+            gallery.querySelectorAll("[data-portal-tabs]").forEach(tabs => {
+                tabs.classList.toggle("d-none", tabs.dataset.portalTabs !== portal);
+            });
+            if (kaamfindBadge) {
+                kaamfindBadge.textContent = btn.dataset.badge || "";
+                kaamfindBadge.className = "badge-portal " + (btn.dataset.badgeClass || "");
+            }
+            const firstTab = gallery.querySelector(`[data-portal-tabs="${portal}"] .screenshot-tab.active`)
+                || gallery.querySelector(`[data-portal-tabs="${portal}"] .screenshot-tab`);
+            if (firstTab) activateTab(firstTab);
+        });
+    });
 });
 
 AOS.init({ duration: 700, once: true, offset: 60, easing: "ease-out-cubic" });

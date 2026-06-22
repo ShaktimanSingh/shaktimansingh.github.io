@@ -109,12 +109,18 @@
                             <div class="hero-avatar-wrapper">
                                 <div class="hero-avatar-ring"></div>
                                 <div class="hero-avatar">
-                                    <img
-                                        src="images/Shaktiman_Singh_Profile_Image.png"
-                                        alt="Shaktiman Singh"
-                                        class="hero-avatar-img"
-                                        onerror="this.classList.add('is-hidden'); this.nextElementSibling.classList.add('is-visible');"
-                                    >
+                                    <picture>
+                                        <source srcset="images/Shaktiman_Singh_Profile_Image.webp" type="image/webp">
+                                        <img
+                                            src="images/Shaktiman_Singh_Profile_Image.jpg"
+                                            alt="Shaktiman Singh"
+                                            class="hero-avatar-img"
+                                            width="560"
+                                            height="840"
+                                            loading="eager"
+                                            onerror="this.classList.add('is-hidden'); this.parentElement.nextElementSibling.classList.add('is-visible');"
+                                        >
+                                    </picture>
                                     <span class="avatar-initials" aria-hidden="true">SS</span>
                                 </div>
                                 <div class="hero-floating-badge badge-top">
@@ -532,45 +538,84 @@
                     <div class="heading-underline mx-auto mt-3"></div>
                 </div>
 
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0">
-                        <div class="project-card featured-card h-100 accent-emerald">
-                            <div class="project-preview mb-3">
-                                <img src="images/kaamfind-preview.svg" alt="KaamFind portal preview" class="project-preview-img">
-                            </div>
-                            <div class="project-card-header">
-                                <div class="project-icon"><i class="fas fa-briefcase"></i></div>
-                                <span class="project-badge">Full-Stack Product</span>
-                            </div>
-                            <h3 class="project-name">KaamFind</h3>
-                            <p class="project-tagline">Job marketplace for blue-collar talent</p>
+                <div class="row g-4 mb-4">
+                    <div class="col-12" data-aos="fade-up">
+                        <div class="project-card featured-card accent-emerald project-showcase">
+                            <div class="row g-4">
+                                <div class="col-lg-7">
+                                    <div class="screenshot-gallery" data-gallery="kaamfind">
+                                        <div class="portal-switcher mb-2">
+                                            <button type="button" class="portal-switch active" data-portal="talent" data-badge="Talent Portal" data-badge-class="badge-talent">Talent Portal</button>
+                                            <button type="button" class="portal-switch" data-portal="admin" data-badge="Admin Console" data-badge-class="badge-admin">Admin Console</button>
+                                        </div>
+                                        <div class="screenshot-main">
+                                            <img id="kaamfindMain" src="images/kaamfind/02-dashboard.png" alt="KaamFind talent dashboard" class="screenshot-main-img">
+                                        </div>
+                                        <div class="screenshot-tabs mt-2" data-portal-tabs="talent">
+                                            <button type="button" class="screenshot-tab active" data-src="images/kaamfind/02-dashboard.png" data-label="Talent Dashboard">Dashboard</button>
+                                            <button type="button" class="screenshot-tab" data-src="images/kaamfind/03-jobs.png" data-label="Job Listings">Jobs</button>
+                                            <button type="button" class="screenshot-tab" data-src="images/kaamfind/04-applications.png" data-label="Applications">Applications</button>
+                                            <button type="button" class="screenshot-tab" data-src="images/kaamfind/05-onboarding.png" data-label="Onboarding">Onboarding</button>
+                                            <button type="button" class="screenshot-tab" data-src="images/kaamfind/06-profile.png" data-label="User Profile">Profile</button>
+                                            <button type="button" class="screenshot-tab" data-src="images/kaamfind/01-home.png" data-label="Portal Home">Home</button>
+                                        </div>
+                                        <div class="screenshot-tabs mt-2 d-none" data-portal-tabs="admin">
+                                            <button type="button" class="screenshot-tab active" data-src="images/kaamfind/admin/01-dashboard.png" data-label="Admin Dashboard">Dashboard</button>
+                                            <button type="button" class="screenshot-tab" data-src="images/kaamfind/admin/02-users.png" data-label="User Management">Users</button>
+                                            <button type="button" class="screenshot-tab" data-src="images/kaamfind/admin/03-profile.png" data-label="Admin Profile">Profile</button>
+                                        </div>
+                                        <p class="screenshot-caption small text-secondary mt-2 mb-0">
+                                            <span id="kaamfindBadge" class="badge-portal badge-talent">Talent Portal</span>
+                                            <span id="kaamfindCaption">Talent Dashboard</span>
+                                        </p>
+                                    </div>
 
-                            <div class="project-metrics row g-2 mb-3">
-                                <div class="col-4"><div class="project-metric"><strong>40+</strong><span>API routes</span></div></div>
-                                <div class="col-4"><div class="project-metric"><strong>4</strong><span>User roles</span></div></div>
-                                <div class="col-4"><div class="project-metric"><strong>3</strong><span>Clients</span></div></div>
-                            </div>
+                                    <div class="screenshot-coming-soon mt-3">
+                                        <p class="small text-muted mb-2">More surfaces coming:</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="portal-chip pending"><i class="bi bi-building"></i> Creator Portal</span>
+                                            <span class="portal-chip pending"><i class="bi bi-phone"></i> Mobile App</span>
+                                        </div>
+                                    </div>
+                                </div>
 
-                            <p class="project-desc">Laravel 11 hiring platform — web portals, JWT mobile API, React Native app, OTP auth, S3 resume pipeline, production deploy on Render + Supabase.</p>
-                            <ul class="project-highlights">
-                                <li>Dual-auth (JWT + session) with onboarding gates & refresh tokens</li>
-                                <li>Application pipeline: pending → accepted with contact handoff</li>
-                                <li>S3 resume storage, compression, scheduled purge, PHPStan max</li>
-                            </ul>
-                            <div class="tech-tags mb-3">
-                                <span class="tech-tag">Laravel 11</span>
-                                <span class="tech-tag">JWT</span>
-                                <span class="tech-tag">React Native</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                                <span class="tech-tag">AWS S3</span>
-                            </div>
-                            <div class="project-links d-flex flex-wrap gap-2">
-                                <a href="https://github.com/ShaktimanSingh/kf_be" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light"><i class="bi bi-github me-1"></i> GitHub</a>
-                                <a href="#architecture-kaamfind" class="btn btn-sm btn-outline-warning"><i class="bi bi-diagram-3 me-1"></i> Architecture</a>
-                                <a href="https://github.com/ShaktimanSingh/kf_be#readme" target="_blank" rel="noopener" class="btn btn-sm btn-warning"><i class="bi bi-box-arrow-up-right me-1"></i> Docs</a>
+                                <div class="col-lg-5">
+                                    <div class="project-card-header">
+                                        <div class="project-icon"><i class="fas fa-briefcase"></i></div>
+                                        <span class="project-badge">Full-Stack Product</span>
+                                    </div>
+                                    <h3 class="project-name">KaamFind</h3>
+                                    <p class="project-tagline">Job marketplace for blue-collar talent</p>
+
+                                    <div class="project-metrics row g-2 mb-3">
+                                        <div class="col-4"><div class="project-metric"><strong>40+</strong><span>API routes</span></div></div>
+                                        <div class="col-4"><div class="project-metric"><strong>4</strong><span>User roles</span></div></div>
+                                        <div class="col-4"><div class="project-metric"><strong>4</strong><span>Surfaces</span></div></div>
+                                    </div>
+
+                                    <p class="project-desc">Laravel 11 hiring platform — talent/creator/admin web portals, JWT mobile API, OTP auth, S3 resume pipeline.</p>
+                                    <ul class="project-highlights">
+                                        <li>Dual-auth (JWT + session) with onboarding gates</li>
+                                        <li>Application pipeline with contact handoff</li>
+                                        <li>S3 resume storage, queues, PHPStan max</li>
+                                    </ul>
+                                    <div class="tech-tags mb-3">
+                                        <span class="tech-tag">Laravel 11</span>
+                                        <span class="tech-tag">JWT</span>
+                                        <span class="tech-tag">React Native</span>
+                                        <span class="tech-tag">PostgreSQL</span>
+                                        <span class="tech-tag">AWS S3</span>
+                                    </div>
+                                    <div class="project-links d-flex flex-wrap gap-2">
+                                        <a href="https://github.com/ShaktimanSingh/kf_be" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light"><i class="bi bi-github me-1"></i> GitHub</a>
+                                        <a href="#architecture-kaamfind" class="btn btn-sm btn-outline-warning"><i class="bi bi-diagram-3 me-1"></i> Architecture</a>
+                                        <a href="https://github.com/ShaktimanSingh/kf_be#readme" target="_blank" rel="noopener" class="btn btn-sm btn-warning"><i class="bi bi-box-arrow-up-right me-1"></i> Docs</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="project-card featured-card h-100 accent-cyan">
                             <div class="project-preview mb-3">
